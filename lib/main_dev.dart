@@ -2,7 +2,7 @@ import 'package:counter/core/util/flavor_config.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
-  await FlavorConfig.init(Flavor.PROD);
+  await FlavorConfig.init(Flavor.DEV);
 
   runApp(const MyApp());
 }
@@ -13,8 +13,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // FlavorConfig.instance.values.baseApiUrl;
-
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
