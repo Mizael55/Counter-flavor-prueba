@@ -1,6 +1,6 @@
 import 'package:counter/core/util/flavor_config.dart';
 import 'package:flutter/material.dart';
-
+// aqui manejamos flavor
 void main() async {
   await FlavorConfig.init(Flavor.DEV);
 
